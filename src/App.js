@@ -1,23 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <form>
+        <h3>Sign Up</h3>
+
+        <div className="form-group">
+          <label>First name</label>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="First name"
+          />
+        </div>
+
+        <div className="form-group">
+          <label>Last name</label>
+          <input type="text" className="form-control" placeholder="Last name" />
+        </div>
+
+        <div className="form-group">
+          <label>Email address</label>
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter email"
+          />
+        </div>
+
+        <div className="form-group">
+          <label>Password</label>
+          <input
+            type="password"
+            className="form-control"
+            placeholder="Enter password"
+          />
+        </div>
+        <div className="btn-group">
+          <button type="submit" className="btn btn-primary btn-block">
+            Sign Up
+          </button>
+          <p className="forgot-password text-right">
+            Already registered <a href="">sign in?</a>
+          </p>
+        </div>
+      </form>
     </div>
   );
 }
